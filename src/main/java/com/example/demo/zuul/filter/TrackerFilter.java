@@ -35,9 +35,11 @@ public class TrackerFilter extends ZuulFilter {
         if(Strings.isBlank(id)){
             if(Strings.isBlank(requestContext.getZuulRequestHeaders().get(RELATION_ID))){
                 id = UUID.randomUUID().toString();
+                RelationIdContextHolder.set(id);
                 requestContext.addZuulRequestHeader(RELATION_ID,id);
             }
         }
+        System.out.println("1");
         return null;
     }
 }
