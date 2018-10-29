@@ -1,3 +1,4 @@
+/*
 package com.example.demo.zuul.filter;
 
 import com.netflix.zuul.ZuulFilter;
@@ -47,11 +48,14 @@ public class RouteFilter extends ZuulFilter {
 
                 requestContext.set(SERVICE_ID_KEY,"serviceb");
             requestContext.set(REQUEST_URI_KEY,"/b/first");
-            /*ResponseEntity<String> responseEntity = restTemplate.exchange(urla, HttpMethod.GET, null, String.class);
+            */
+/*ResponseEntity<String> responseEntity = restTemplate.exchange(urla, HttpMethod.GET, null, String.class);
             System.out.println(responseEntity.getBody());
-            requestContext.setSendZuulResponse(false);*/
+            requestContext.setSendZuulResponse(false);*//*
+
             // return responseEntity;
         }
         return null;
     }
 }
+*/
